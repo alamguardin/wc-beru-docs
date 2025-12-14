@@ -50,6 +50,35 @@ import Astroo from './icons/Astro.astro'
 			</div>
 		</div>
 	</section>
+	<section class="example">
+		<h3 class="example-title">Here are just a few examples; find more in the <a href="">documentation</a>.</h3>
+		<div class="example-feature">
+			<h4 class="example-feature-title">Types</h4>
+			<p class="example-feature-description">You can customize the type of toast you want to render, and pass an options object as the second argument.</p>
+			<div class="example-feature-actions">
+				<button class="example-btn">Default</button>
+				<button class="example-btn">Success</button>
+				<button class="example-btn">Info</button>
+				<button class="example-btn">Error</button>
+				<button class="example-btn">Warning</button>
+			</div>
+		</div>
+		<div class="example-feature">
+			<h4 class="example-feature-title">Positions</h4>
+			<p class="example-feature-description">Swipe direction changes depending on the position.</p>
+			<div class="example-feature-actions">
+				<button class="example-btn">Top left</button>
+				<button class="example-btn">Top center</button>
+				<button class="example-btn">Top right</button>
+				<button class="example-btn">Bottom left</button>
+				<button class="example-btn">Bottom center</button>
+				<button class="example-btn">Bottom right</button>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<p class="footer-copy">Copyright (c) 2025 Alam Guardin</p>
+	</footer>
 </div>
 
 <style>
@@ -172,5 +201,74 @@ import Astroo from './icons/Astro.astro'
 		.integration-box:last-child {
 			opacity: 0.2;
 		}
+	}
+
+	.example {
+		margin: 6rem 0;
+	}
+
+	.example-title {
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: var(--fg-title);
+		text-align: center;
+	}
+
+	.example-title a {
+		color: var(--fg-link);
+	}
+
+	.example-feature {
+		margin-top: 3rem;
+	}
+
+	.example-feature-title {
+		font-size: 1.125rem;
+		font-weight: 500;
+		margin-bottom: 1rem;
+	}
+
+	.example-feature-description {
+		color: var(--fg-text);
+	}
+
+	.example-feature-actions {
+		margin: 6rem auto 6rem auto;
+		max-width: 450px;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 14px;
+	}
+
+	.example-btn {
+		display: inline-block;
+		padding: 0.75rem 1.5rem;
+		background: var(--bg-button-light);
+		font-family: 'Inconsolata', 'Courier New', Courier, monospace;
+		font-size: 0.875rem;
+		text-decoration: none;
+		border: 2px solid var(--br-button-light);
+		border-radius: 0.5rem;
+		transition: .2s all ease;
+		cursor: pointer;
+	}
+
+	.example-btn:hover {
+		translate: 0 -4px;
+	}
+
+	.example-btn:active {
+		scale: 0.95;
+	}
+
+	.footer {
+		text-align: center;
+		margin-bottom: 48px;
+	}
+
+	.footer-copy {
+		color: var(--fg-text);
 	}
 </style>
